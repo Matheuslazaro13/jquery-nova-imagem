@@ -10,8 +10,8 @@ $(document).ready(function(){
     $("form").on("submit", function(e){
         e.preventDefault()
         const enderecoNovaImagem = $('#nova-imagem').val()
-        const novoItem = $(`<li style = 'display: none'><?li>`)
-        $(`<img src="${enderecoNovaImagem}"?>`).appendTo(novoItem)
+        const novoItem = $(`<li style = 'display: none'></li>`)
+        $(`<img src="${enderecoNovaImagem}"/>`).appendTo(novoItem)
         $(`<div>
            <a href=${enderecoNovaImagem} target ="_blank" title =  "ver imagem em tamanho real"
            </a>
